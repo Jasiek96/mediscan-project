@@ -127,10 +127,10 @@ def test_categorize_bmi_boundary(bmi, expected_category):
     (9.0, "M", "umiarkowana"),  # mężczyzna, umiarkowana niedokrwistość
     (7.0, "M", "ciężka"),       # mężczyzna, ciężka niedokrwistość
     
-    (13.0, "F", "brak"),        # kobieta, normalna hemoglobina
-    (11.0, "F", "brak"),        # kobieta, normalna hemoglobina
-    (9.5, "F", "łagodna"),      # kobieta, łagodna niedokrwistość
-    (7.5, "F", "umiarkowana"),  # kobieta, umiarkowana niedokrwistość
+    (13.0, "F", "brak"),        # kobieta, normalna hemoglobina, taka sytuacja
+    (11.0, "F", "łagodna"),        # kobieta, łagodna niedokrwistość
+    (9.5, "F", "umiarkowana"),      # kobieta, umiarkowana niedokrwistość
+    (7.5, "F", "ciężka"),  # kobieta, ciężka niedokrwistość
     (6.0, "F", "ciężka")        # kobieta, ciężka niedokrwistość
 ])
 def test_calculate_anemia_severity(hemoglobin, sex, expected_severity):
